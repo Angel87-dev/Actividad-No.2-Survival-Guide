@@ -110,8 +110,114 @@ while True:
             print("Obtuviste" ,correctas, "respuestas correctas, puedes avanzar")
             break
 
+print("")
 print("============")
-print("El Oráculo de las Notas: Donde se detallan los porcentajes de evaluación.")
+correctas = 0
+while True:
+    print("")
+    print("El Oráculo de las Notas: Donde se detallan los porcentajes de evaluación.")
+    print("¿Cuanto vale la evidencia de conocimiento 1P?")
+    print("1. 35%, 2. 40%, 3. 45%")
+    respuesta = input("¿Cuál es tu respuesta?: ")
+    if respuesta == "2":
+        print("Respuesta correcta")
+        correctas += 1
+        print("Llevas: " ,correctas, "respuestas correctas")
+    else:
+        print("Respuesta equivocada")
+        print("Llevas: " ,correctas, "respuestas correctas")
+
+    print("")
+    print("¿Cuanto vale el PI en el primer y segundo parcial?")
+    print("1. 10%, 2. 15%, 3. 20%")
+    respuesta = input("¿Cual es tu respuesta?: ")
+    if respuesta == "1":
+        print("Respuesta correcta")
+        correctas += 1
+        print("Llevas: " ,correctas, "respuestas correctas")
+        if correctas >= 2:
+            decision = input("¿Quieres pasar al siguiente nivel? (1=Si/0=No): ")
+            if decision == "1":
+                break
+    else:
+        print("Respuesta equivocada")
+        print("Llevas: " ,correctas, "respuestas correctas")
+
+    print("")
+    print("¿Cuanto vale la evidencia de desempeño en el 2P?")
+    print("1. 20%, 2. 25%, 3. 30%")
+    respuesta = input("¿Cuál es tu respuesta?: ")
+    if respuesta == "1":
+        print("Respuesta correcta")
+        correctas += 1
+        print("Llevas: " ,correctas, "respuestas correctas")
+        if correctas >= 2:
+            decision = input("¿Quieres pasar al siguiente nivel? (1=Si/0=No): ")
+            if decision == "1":
+                break
+    else:
+        print("Respuesta equivocada")
+        print("Llevas: " ,correctas, "respuestas correctas")
+        if correctas >= 2:
+            decision = input("¿Quieres pasar al siguiente nivel? (1=Si/0=No): ")
+            if decision == "1":
+                break
+
+    print("")
+    print("¿Cuanto vale la evidencia de conocimiento en el 3P?")
+    print("1. 30%, 2. 20%, 3. 10%")
+    respuesta = input("¿Cuál es tu respuesta?: ")
+    if respuesta == "3":
+        print("Respuesta correcta")
+        correctas += 1
+        print("Llevas: " ,correctas, "respuestas correctas")
+        if correctas >= 2:
+            decision = input("¿Quieres pasar al siguiente nivel? (1=Si/0=No): ")
+            if decision == "1":
+                break
+    else:
+        print("Respuesta equivocada")
+        print("Llevas: " ,correctas, "respuestas correctas")
+        if correctas >= 2:
+            decision = input("¿Quieres pasar al siguiente nivel? (1=Si/0=No): ")
+            if decision == "1":
+                break
+
+    print("")
+    print("¿Cuanto vale la evidencia de producto en el 3P?")
+    print("1. 20%, 2. 30%, 3. 40%")
+    respuesta = input("¿Cuál es tu respuesta?: ")
+    if respuesta == "2":
+        print("Respuesta correcta")
+        correctas += 1
+        print("Llevas: " ,correctas, "respuestas correctas")
+        if correctas >= 2:
+            decision = input("¿Quieres pasar al siguiente nivel? (1=Si/0=No): ")
+            if decision == "1":
+                break
+    else:
+        print("Respuesta equivocada")
+        print("Llevas: " ,correctas, "respuestas correctas")
+        if correctas >= 2:
+            decision = input("¿Quieres pasar al siguiente nivel? (1=Si/0=No): ")
+            if decision == "1":
+                break
+
+    print("")
+    print("¿Cuanto vale el PI en el 3P?")
+    print("1. 30%, 2. 40%, 3. 50%")
+    respuesta = input("¿Cuál es tu respuesta?: ")
+    if respuesta == "3":
+        print("Respuesta correcta")
+        correctas += 1
+        if correctas >= 2:
+            print("Obtuviste" ,correctas, "respuestas correctas, puedes avanzar")
+            break
+    else:
+        print("Respuesta equivocada")
+        if correctas >= 2:
+            print("Obtuviste" ,correctas, "respuestas correctas, puedes avanzar")
+            break
 
 print("============")
 print("Skills a desbloquear: Aquí se detallan el objetivo general y particular de la materia")
