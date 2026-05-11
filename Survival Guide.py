@@ -1,9 +1,11 @@
 print("Bienvenido al Survival Guide")
 print("A continuación se mostraran los 4 nieveles que debes pasar")
+print("En cada nivel, si tienes 2 respuestas correctas, tienes la posibilidad de avanzar al siguiente")
 
 print("============")
 correctas = 0
 while True:
+    print("")
     print("La Cámara de las Reglas: Donde se explican las normas de convivencia y asistencia.")
     print("Conforme a las siguientes opciones...")
     print("1. Respeto, 2. Falta de compromiso, 3. Ser grosero")
@@ -25,7 +27,7 @@ while True:
         correctas += 1
         print("Llevas: " ,correctas, "respuestas correctas")
         if correctas >= 2:
-            decision = input("Checkpoint desbloqueado ¿Quieres pasar al siguiente nivel? (1=Si/0=No): ")
+            decision = input("¿Quieres pasar al siguiente nivel? (1=Si/0=No): ")
             if decision == "1":
                 break
     else:
@@ -47,6 +49,10 @@ while True:
     else:
         print("Respuesta equivocada")
         print("Llevas: " ,correctas, "respuestas correctas")
+        if correctas >= 2:
+            decision = input("¿Quieres pasar al siguiente nivel? (1=Si/0=No): ")
+            if decision == "1":
+                break
 
     print("")
     print("¿Cuál es la calificación máxima en un final?")
@@ -63,6 +69,10 @@ while True:
     else:
         print("Respuesta equivocada")
         print("Llevas: " ,correctas, "respuestas correctas")
+        if correctas >= 2:
+            decision = input("¿Quieres pasar al siguiente nivel? (1=Si/0=No): ")
+            if decision == "1":
+                break
 
     print("")
     print("¿Qué pasa si se encuentra plagio en los trabajos?")
@@ -79,6 +89,10 @@ while True:
     else:
         print("Respuesta equivocada")
         print("Llevas: " ,correctas, "respuestas correctas")
+        if correctas >= 2:
+            decision = input("¿Quieres pasar al siguiente nivel? (1=Si/0=No): ")
+            if decision == "1":
+                break
 
     print("")
     print("¿Como se tienen que entregar los trabajos?")
@@ -87,14 +101,14 @@ while True:
     if respuesta == "3":
         print("Respuesta correcta")
         correctas += 1
-        print("Llevas: " ,correctas, "respuestas correctas")
         if correctas >= 2:
-            decision = input("¿Quieres pasar al siguiente nivel? (1=Si/0=No): ")
-            if decision == "1":
-                break
+            print("Obtuviste" ,correctas, "respuestas correctas, puedes avanzar")
+            break
     else:
         print("Respuesta equivocada")
-        print("Llevas: " ,correctas, "respuestas correctas")
+        if correctas >= 2:
+            print("Obtuviste" ,correctas, "respuestas correctas, puedes avanzar")
+            break
 
 print("============")
 print("El Oráculo de las Notas: Donde se detallan los porcentajes de evaluación.")
