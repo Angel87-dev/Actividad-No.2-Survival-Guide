@@ -1,6 +1,6 @@
 print("Bienvenido al Survival Guide")
-print("A continuación se mostraran los 4 nieveles que debes pasar")
-print("En cada nivel, si tienes 2 respuestas correctas, tienes la posibilidad de avanzar al siguiente (si tu lo deseas)")
+print("A continuación se mostrarán los 4 niveles que debes pasar")
+print("En cada nivel, si tienes 2 respuestas correctas, tienes la posibilidad de avanzar al siguiente (si tú lo deseas)")
 print("En el caso del nivel final, si tienes 2 buenas puedes decidir si acabar el código o seguir")
 
 print("============")
@@ -20,7 +20,7 @@ while True:
         print("Llevas: " ,correctas, "respuestas correctas")
 
     print("")
-    print("Es _______ particiar en clase")
+    print("Es _______ participar en clase")
     print("1. Irrelevante, 2. Importante, 3. Considerable")
     respuesta = input("¿Cual es tu respuesta?: ")
     if respuesta == "2":
@@ -77,7 +77,7 @@ while True:
 
     print("")
     print("¿Qué pasa si se encuentra plagio en los trabajos?")
-    print("1. Cero para todos, 2. Se puede volver a hacer el trabajo, 3. Cero solamente para la persona que copio")
+    print("1. Cero para todos, 2. Se puede volver a hacer el trabajo, 3. Cero solamente para la persona que copió")
     respuesta = input("¿Cuál es tu respuesta?: ")
     if respuesta == "1":
         print("Respuesta correcta")
@@ -97,7 +97,7 @@ while True:
 
     print("")
     print("¿Como se tienen que entregar los trabajos?")
-    print("1. Incompletos, 2. Minimo con la mitad de lo que se requiere, 3. Completos")
+    print("1. Incompletos, 2. Mínimo con la mitad de lo que se requiere, 3. Completos")
     respuesta = input("¿Cuál es tu respuesta?: ")
     if respuesta == "3":
         print("Respuesta correcta")
@@ -262,7 +262,7 @@ while True:
         print("Llevas: " ,correctas, "respuestas correctas")
 
     print("")
-    print("Fatan tres puntos del objetivo general ¿Cuál es el orden?")
+    print("Faltan tres puntos del objetivo general ¿Cuál es el orden?")
     print("1. Servidor web/API/Base de datos, 2. Base de datos/Servidor web/API, 3. API/Servidor web/Base de datos")
     respuesta = input("¿Cuál es tu respuesta?: ")
     if respuesta == "3":
@@ -345,7 +345,6 @@ while True:
 
 print("")
 print("============")
-print("La Línea del Tiempo: Donde se muestran las fechas clave del semestre.")
 correctas = 0
 while True:
     print("")
@@ -407,5 +406,5 @@ while True:
 
 print("")
 print("============")
-print("Felicidades, haz sobrevivido... por el momento")
+print("Felicidades, has sobrevivido... por el momento")
 print("")
