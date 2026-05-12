@@ -1,6 +1,7 @@
 print("Bienvenido al Survival Guide")
 print("A continuación se mostraran los 4 nieveles que debes pasar")
-print("En cada nivel, si tienes 2 respuestas correctas, tienes la posibilidad de avanzar al siguiente")
+print("En cada nivel, si tienes 2 respuestas correctas, tienes la posibilidad de avanzar al siguiente (si tu lo deseas)")
+print("En el caso del nivel final, si tienes 2 buenas puedes decidir si acabar el código o seguir")
 
 print("============")
 correctas = 0
@@ -104,11 +105,15 @@ while True:
         if correctas >= 2:
             print("Obtuviste" ,correctas, "respuestas correctas, puedes avanzar")
             break
+        else:
+            print("No alcanzaste el mínimo de respuestas, intenta de nuevo")
     else:
         print("Respuesta equivocada")
         if correctas >= 2:
             print("Obtuviste" ,correctas, "respuestas correctas, puedes avanzar")
             break
+        else:
+            print("No alcanzaste el mínimo de respuestas, intenta de nuevo")
 
 print("")
 print("============")
@@ -213,11 +218,15 @@ while True:
         if correctas >= 2:
             print("Obtuviste" ,correctas, "respuestas correctas, puedes avanzar")
             break
+        else:
+            print("No alcanzaste el mínimo de respuestas, intenta de nuevo")
     else:
         print("Respuesta equivocada")
         if correctas >= 2:
             print("Obtuviste" ,correctas, "respuestas correctas, puedes avanzar")
             break
+        else:
+            print("No alcanzaste el mínimo de respuestas, intenta de nuevo")
 
 print("")
 print("============")
@@ -324,11 +333,15 @@ while True:
         if correctas >= 2:
             print("Obtuviste" ,correctas, "respuestas correctas, puedes avanzar")
             break
+        else:
+            print("No alcanzaste el mínimo de respuestas, intenta de nuevo")
     else:
         print("Respuesta equivocada")
         if correctas >= 2:
             print("Obtuviste" ,correctas, "respuestas correctas, puedes avanzar")
             break
+        else:
+            print("No alcanzaste el mínimo de respuestas, intenta de nuevo")
 
 print("")
 print("============")
@@ -382,11 +395,17 @@ while True:
         if correctas >= 2:
             print("Obtuviste" ,correctas, "respuestas correctas, terminaste los 4 niveles")
             break
+        else:
+            print("No alcanzaste el mínimo de respuestas, intenta de nuevo")
     else:
         print("Respuesta equivocada")
         if correctas >= 2:
             print("Obtuviste" ,correctas, "respuestas correctas, terminaste los 4 niveles")
             break
+        else:
+            print("No alcanzaste el mínimo de respuestas, intenta de nuevo")
 
+print("")
 print("============")
 print("Felicidades, haz sobrevivido... por el momento")
+print("")
