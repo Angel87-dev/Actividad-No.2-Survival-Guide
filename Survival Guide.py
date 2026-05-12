@@ -4,8 +4,8 @@ print("En cada nivel, si tienes 2 respuestas correctas, tienes la posibilidad de
 print("En el caso del nivel final, si tienes 2 buenas puedes decidir si acabar el código o seguir")
 
 print("============")
-correctas = 0
 while True:
+    correctas = 0
     print("")
     print("La Cámara de las Reglas: Donde se explican las normas de convivencia y asistencia.")
     print("Conforme a las siguientes opciones...")
@@ -117,8 +117,8 @@ while True:
 
 print("")
 print("============")
-correctas = 0
 while True:
+    correctas = 0
     print("")
     print("El Oráculo de las Notas: Donde se detallan los porcentajes de evaluación.")
     print("¿Cuanto vale la evidencia de conocimiento 1P?")
@@ -230,8 +230,8 @@ while True:
 
 print("")
 print("============")
-correctas = 0
 while True:
+    correctas = 0
     print("")
     print("Skills a desbloquear: Aquí se detallan el objetivo general y particular de la materia")
     print("El primer punto del objetivo general de la materia es: ")
@@ -345,8 +345,8 @@ while True:
 
 print("")
 print("============")
-correctas = 0
 while True:
+    correctas = 0
     print("")
     print("La Línea del Tiempo: Donde se muestran las fechas clave del semestre.")
     respuesta = input("¿Qué día numerado de Junio es el primer examen parcial?: ")
