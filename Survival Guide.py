@@ -219,8 +219,116 @@ while True:
             print("Obtuviste" ,correctas, "respuestas correctas, puedes avanzar")
             break
 
+print("")
 print("============")
-print("Skills a desbloquear: Aquí se detallan el objetivo general y particular de la materia")
+correctas = 0
+while True:
+    print("")
+    print("Skills a desbloquear: Aquí se detallan el objetivo general y particular de la materia")
+    print("El primer punto del objetivo general de la materia es: ")
+    print("1. App web o móvil, 2. API, 3. Base de datos")
+    respuesta = input("¿Cuál es tu respuesta?: ")
+    if respuesta == "1":
+        print("Respuesta correcta")
+        correctas += 1
+        print("Llevas: " ,correctas, "respuestas correctas")
+    else:
+        print("Respuesta equivocada")
+        print("Llevas: " ,correctas, "respuestas correctas")
+
+    print("")
+    print("El segundo punto menciona internet ¿que tipo es?")
+    print("1. Privado, 2. Público")
+    respuesta = input("¿Cual es tu respuesta?: ")
+    if respuesta == "2":
+        print("Respuesta correcta")
+        correctas += 1
+        print("Llevas: " ,correctas, "respuestas correctas")
+        if correctas >= 2:
+            decision = input("¿Quieres pasar al siguiente nivel? (1=Si/0=No): ")
+            if decision == "1":
+                break
+    else:
+        print("Respuesta equivocada")
+        print("Llevas: " ,correctas, "respuestas correctas")
+
+    print("")
+    print("Fatan tres puntos del objetivo general ¿Cuál es el orden?")
+    print("1. Servidor web/API/Base de datos, 2. Base de datos/Servidor web/API, 3. API/Servidor web/Base de datos")
+    respuesta = input("¿Cuál es tu respuesta?: ")
+    if respuesta == "3":
+        print("Respuesta correcta")
+        correctas += 1
+        print("Llevas: " ,correctas, "respuestas correctas")
+        if correctas >= 2:
+            decision = input("¿Quieres pasar al siguiente nivel? (1=Si/0=No): ")
+            if decision == "1":
+                break
+    else:
+        print("Respuesta equivocada")
+        print("Llevas: " ,correctas, "respuestas correctas")
+        if correctas >= 2:
+            decision = input("¿Quieres pasar al siguiente nivel? (1=Si/0=No): ")
+            if decision == "1":
+                break
+
+    print("")
+    print("¿Qué usaremos en el objetivo específico?")
+    print("1. HTML, 2. JS, 3. Figma")
+    respuesta = input("¿Cuál es tu respuesta?: ")
+    if respuesta == "2":
+        print("Respuesta correcta")
+        correctas += 1
+        print("Llevas: " ,correctas, "respuestas correctas")
+        if correctas >= 2:
+            decision = input("¿Quieres pasar al siguiente nivel? (1=Si/0=No): ")
+            if decision == "1":
+                break
+    else:
+        print("Respuesta equivocada")
+        print("Llevas: " ,correctas, "respuestas correctas")
+        if correctas >= 2:
+            decision = input("¿Quieres pasar al siguiente nivel? (1=Si/0=No): ")
+            if decision == "1":
+                break
+
+    print("")
+    print("¿Cual es la otra herramienta que usaremos?")
+    print("1. React Native, 2. Flutter, 3. Ionic")
+    respuesta = input("¿Cuál es tu respuesta?: ")
+    if respuesta == "1":
+        print("Respuesta correcta")
+        correctas += 1
+        print("Llevas: " ,correctas, "respuestas correctas")
+        if correctas >= 2:
+            decision = input("¿Quieres pasar al siguiente nivel? (1=Si/0=No): ")
+            if decision == "1":
+                break
+    else:
+        print("Respuesta equivocada")
+        print("Llevas: " ,correctas, "respuestas correctas")
+        if correctas >= 2:
+            decision = input("¿Quieres pasar al siguiente nivel? (1=Si/0=No): ")
+            if decision == "1":
+                break
+
+    print("")
+    print("En relación a la pregunta anterior ¿Cuáles son las características?")
+    print("1. Componentes, Screens, Navigations y Comunicación con API")
+    print("2. Componentes, Ventanas, Conexiones locales y Bases de datos")
+    print("3. Interfaces, Navegación, Diseño visual y Configuración de servidores")
+    respuesta = input("¿Cuál es tu respuesta?: ")
+    if respuesta == "1":
+        print("Respuesta correcta")
+        correctas += 1
+        if correctas >= 2:
+            print("Obtuviste" ,correctas, "respuestas correctas, puedes avanzar")
+            break
+    else:
+        print("Respuesta equivocada")
+        if correctas >= 2:
+            print("Obtuviste" ,correctas, "respuestas correctas, puedes avanzar")
+            break
 
 print("============")
 print("La Línea del Tiempo: Donde se muestran las fechas clave del semestre.")
