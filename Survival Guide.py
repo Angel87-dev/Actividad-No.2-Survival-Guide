@@ -330,8 +330,63 @@ while True:
             print("Obtuviste" ,correctas, "respuestas correctas, puedes avanzar")
             break
 
+print("")
 print("============")
 print("La Línea del Tiempo: Donde se muestran las fechas clave del semestre.")
+correctas = 0
+while True:
+    print("")
+    print("La Línea del Tiempo: Donde se muestran las fechas clave del semestre.")
+    respuesta = input("¿Qué día numerado de Junio es el primer examen parcial?: ")
+    if respuesta == "2":
+        print("Respuesta correcta")
+        correctas += 1
+        print("Llevas: " ,correctas, "respuestas correctas")
+    else:
+        print("Respuesta equivocada")
+        print("Llevas: " ,correctas, "respuestas correctas")
+
+    print("")
+    respuesta = input("¿Qué día numerado de Julio es el segundo examen parcial?: ")
+    if respuesta == "7":
+        print("Respuesta correcta")
+        correctas += 1
+        print("Llevas: " ,correctas, "respuestas correctas")
+        if correctas >= 2:
+            decision = input("¿Quieres terminar los niveles? (1=Si/0=No): ")
+            if decision == "1":
+                break
+    else:
+        print("Respuesta equivocada")
+        print("Llevas: " ,correctas, "respuestas correctas")
+
+    print("")
+    respuesta = input("¿Qué día numerado de Agosto es el tercer examen parcial?: ")
+    if respuesta == "11":
+        print("Respuesta correcta")
+        correctas += 1
+        print("Llevas: " ,correctas, "respuestas correctas")
+        if correctas >= 2:
+            decision = input("¿Quieres terminar los niveles? (1=Si/0=No): ")
+            if decision == "1":
+                break
+    else:
+        print("Respuesta equivocada")
+        print("Llevas: " ,correctas, "respuestas correctas")
+
+    print("")
+    respuesta = input("¿Qué día numerado de Agosto es el examen final?: ")
+    if respuesta == "17":
+        print("Respuesta correcta")
+        correctas += 1
+        if correctas >= 2:
+            print("Obtuviste" ,correctas, "respuestas correctas, terminaste los 4 niveles")
+            break
+    else:
+        print("Respuesta equivocada")
+        if correctas >= 2:
+            print("Obtuviste" ,correctas, "respuestas correctas, terminaste los 4 niveles")
+            break
 
 print("============")
 print("Felicidades, haz sobrevivido... por el momento")
